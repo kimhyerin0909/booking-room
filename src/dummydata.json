@@ -2,12 +2,13 @@
     {
         "id":0,
         "title":"베르 1실",
-        "locate":"기숙사 3층 구석탱이",
+        "locate":"기숙사 3층 좋은 곳",
         "max":1,
         "time":"PM 9:30 ~ PM 10:30",
+        "imgSrc":"https://moplqfgeemqv2103108.cdn.ntruss.com/service/160291394_69aad558652a59245dd8a80bd9c1a424.jpg?type=m&w=900&h=900&autorotate=true&quality=90",
         "booking": [
             {
-                "teamId":1,
+                "teamId":0,
                 "purpose":"각자의 분야 공부를 위해 사용할 것임미다.",
                 "student": [
                     {
@@ -34,12 +35,14 @@
     {
         "id":1,
         "title":"베르 1실",
-        "locate":"기숙사 3층 구석탱이",
+        "locate":"기숙사 3층 좋은 곳",
         "max":1,
         "time":"PM 9:30 ~ PM 10:30",
+        
+        "imgSrc":"https://moplqfgeemqv2103108.cdn.ntruss.com/service/160291394_69aad558652a59245dd8a80bd9c1a424.jpg?type=m&w=900&h=900&autorotate=true&quality=90",
         "booking": [
             {
-                "teamId":1,
+                "teamId":0,
                 "purpose":"각자의 분야 공부를 위해 사용할 것임미다.",
                 "student": [
                     {
@@ -66,10 +69,35 @@
     {
         "id":2,
         "title":"베르 4실",
-        "locate":"기숙사 3층 구석탱이",
+        "locate":"기숙사 3층 좋은 곳",
         "max":3,
         "time":"PM 9:30 ~ PM 10:30",
+        
+        "imgSrc":"https://moplqfgeemqv2103108.cdn.ntruss.com/service/160291394_69aad558652a59245dd8a80bd9c1a424.jpg?type=m&w=900&h=900&autorotate=true&quality=90",
         "booking": [
+            {
+                "teamId":0,
+                "purpose":"각자의 분야 공부를 위해 사용할 것임미다.",
+                "student": [
+                    {
+                        "number":2204,
+                        "name":"김혜린",
+                        "phone":"01055728017"
+                    },
+                    {
+                        "number":2208,
+                        "name":"유나은"
+                    },
+                    {
+                        "number":2213,
+                        "name":"진유림"
+                    },
+                    {
+                        "number":2215,
+                        "name":"최태영"
+                    }
+                ]
+            },
             {
                 "teamId":1,
                 "purpose":"각자의 분야 공부를 위해 사용할 것임미다.",
@@ -98,12 +126,14 @@
     {
         "id":3,
         "title":"베르 1실",
-        "locate":"기숙사 3층 구석탱이",
+        "locate":"기숙사 3층 좋은 곳",
         "max":2,
         "time":"PM 9:30 ~ PM 10:30",
+        
+        "imgSrc":"https://moplqfgeemqv2103108.cdn.ntruss.com/service/160291394_69aad558652a59245dd8a80bd9c1a424.jpg?type=m&w=900&h=900&autorotate=true&quality=90",
         "booking": [
             {
-                "teamId":1,
+                "teamId":0,
                 "purpose":"각자의 분야 공부를 위해 사용할 것임미다.",
                 "student": [
                     {
@@ -130,12 +160,14 @@
     {
         "id":4,
         "title":"베르 1실",
-        "locate":"기숙사 3층 구석탱이",
+        "locate":"기숙사 3층 좋은 곳",
         "max":1,
         "time":"PM 9:30 ~ PM 10:30",
+        
+        "imgSrc":"https://moplqfgeemqv2103108.cdn.ntruss.com/service/160291394_69aad558652a59245dd8a80bd9c1a424.jpg?type=m&w=900&h=900&autorotate=true&quality=90",
         "booking": [
             {
-                "teamId":1,
+                "teamId":0,
                 "purpose":"각자의 분야 공부를 위해 사용할 것임미다.",
                 "student": [
                     {
@@ -162,12 +194,14 @@
     {
         "id":5,
         "title":"베르 1실",
-        "locate":"기숙사 3층 구석탱이",
+        "locate":"기숙사 3층 좋은 곳",
         "max":4,
         "time":"PM 9:30 ~ PM 10:30",
+        
+        "imgSrc":"https://moplqfgeemqv2103108.cdn.ntruss.com/service/160291394_69aad558652a59245dd8a80bd9c1a424.jpg?type=m&w=900&h=900&autorotate=true&quality=90",
         "booking": [
             {
-                "teamId":1,
+                "teamId":0,
                 "purpose":"각자의 분야 공부를 위해 사용할 것임미다.",
                 "student": [
                     {
@@ -194,12 +228,14 @@
     {
         "id":6,
         "title":"베르 1실",
-        "locate":"기숙사 3층 구석탱이",
+        "locate":"기숙사 3층 좋은 곳",
         "max":1,
         "time":"PM 9:30 ~ PM 10:30",
+        
+        "imgSrc":"https://moplqfgeemqv2103108.cdn.ntruss.com/service/160291394_69aad558652a59245dd8a80bd9c1a424.jpg?type=m&w=900&h=900&autorotate=true&quality=90",
         "booking": [
             {
-                "teamId":1,
+                "teamId":0,
                 "purpose":"각자의 분야 공부를 위해 사용할 것임미다.",
                 "student": [
                     {
@@ -226,12 +262,14 @@
     {
         "id":7,
         "title":"베르 1실",
-        "locate":"기숙사 3층 구석탱이",
+        "locate":"기숙사 3층 좋은 곳",
         "max":1,
         "time":"PM 9:30 ~ PM 10:30",
+        
+        "imgSrc":"https://moplqfgeemqv2103108.cdn.ntruss.com/service/160291394_69aad558652a59245dd8a80bd9c1a424.jpg?type=m&w=900&h=900&autorotate=true&quality=90",
         "booking": [
             {
-                "teamId":1,
+                "teamId":0,
                 "purpose":"각자의 분야 공부를 위해 사용할 것임미다.",
                 "student": [
                     {
@@ -258,12 +296,14 @@
     {
         "id":8,
         "title":"베르 1실",
-        "locate":"기숙사 3층 구석탱이",
+        "locate":"기숙사 3층 좋은 곳",
         "max":1,
         "time":"PM 9:30 ~ PM 10:30",
+        
+        "imgSrc":"https://moplqfgeemqv2103108.cdn.ntruss.com/service/160291394_69aad558652a59245dd8a80bd9c1a424.jpg?type=m&w=900&h=900&autorotate=true&quality=90",
         "booking": [
             {
-                "teamId":1,
+                "teamId":0,
                 "purpose":"각자의 분야 공부를 위해 사용할 것임미다.",
                 "student": [
                     {
@@ -290,12 +330,13 @@
     {
         "id":9,
         "title":"베르 1실",
-        "locate":"기숙사 3층 구석탱이",
+        "locate":"기숙사 3층 좋은 곳",
         "max":1,
         "time":"PM 9:30 ~ PM 10:30",
+        "imgSrc":"https://moplqfgeemqv2103108.cdn.ntruss.com/service/160291394_69aad558652a59245dd8a80bd9c1a424.jpg?type=m&w=900&h=900&autorotate=true&quality=90",
         "booking": [
             {
-                "teamId":1,
+                "teamId":0,
                 "purpose":"각자의 분야 공부를 위해 사용할 것임미다.",
                 "student": [
                     {
@@ -322,12 +363,14 @@
     {
         "id":10,
         "title":"베르 1실",
-        "locate":"기숙사 3층 구석탱이",
+        "locate":"기숙사 3층 좋은 곳",
         "max":1,
         "time":"PM 9:30 ~ PM 10:30",
+        
+        "imgSrc":"https://moplqfgeemqv2103108.cdn.ntruss.com/service/160291394_69aad558652a59245dd8a80bd9c1a424.jpg?type=m&w=900&h=900&autorotate=true&quality=90",
         "booking": [
             {
-                "teamId":1,
+                "teamId":0,
                 "purpose":"각자의 분야 공부를 위해 사용할 것임미다.",
                 "student": [
                     {
