@@ -101,19 +101,55 @@ b {
         }
     }
     .item-info {
-        display: block;
         width: 100%;
-        .info-box {
+        height: 400px;
+        .back {
+            display: block;
+            width: 10%;
             display: flex;
-            justify-content: center;
-            img {
-                width: 50%;
+            transition: 0.2s;
+            svg {
+                width: 25px;
             }
-            section {
-                width: 50%;
+            button {
+                border: none;
+                background-color: #f7f7f7;
+                font-family: GmarketSansMedium;
+            }
+            &:hover {
+                transition: 0.2s;
+                transform: translateX(-5px);
             }
         }
-        
+        .info-box {
+            display: grid;
+            width: 100%;
+            grid-template-columns: 1fr 1fr;
+            grid-gap: 1.4rem;
+            margin-top: 10px;
+            img {
+                height: 400px;
+                object-fit:fill;
+                width: 100%;
+            }
+            section {
+                background-color: white;
+                border: 0.3px solid #afafaf;
+                padding: 50px;
+                .info-item {
+                    display: flex;
+                    height: 30px;
+                    margin-top: 10px;
+                    align-items: center;
+                    span {
+                        margin-left: 5px;
+                    }
+                }
+                .info-title {
+                    font-size: 25px;
+                }
+            }
+        }
     }
     .list-parent {
         display: grid;
@@ -135,12 +171,11 @@ b {
                 transition: 0.3s;
                 box-shadow: rgb(0 0 0 / 10%) 0px 4px 16px 0px;
             }
-            .list-icon {
-                display:inline;
-            }
             .list-item {
                 display: flex;
                 align-items: center;
+                height: 25px;
+                line-height: 25px;
                 margin-top: 15px;
                 svg {
                     margin-right: 7px;

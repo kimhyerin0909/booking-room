@@ -99,18 +99,55 @@ b {
   padding: 1%;
 }
 .booking-list .item-info {
-  display: block;
   width: 100%;
+  height: 400px;
+}
+.booking-list .item-info .back {
+  display: block;
+  width: 10%;
+  display: flex;
+  transition: 0.2s;
+}
+.booking-list .item-info .back svg {
+  width: 25px;
+}
+.booking-list .item-info .back button {
+  border: none;
+  background-color: #f7f7f7;
+  font-family: GmarketSansMedium;
+}
+.booking-list .item-info .back:hover {
+  transition: 0.2s;
+  transform: translateX(-5px);
 }
 .booking-list .item-info .info-box {
-  display: flex;
-  justify-content: center;
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 1.4rem;
+  margin-top: 10px;
 }
 .booking-list .item-info .info-box img {
-  width: 50%;
+  height: 400px;
+  object-fit: fill;
+  width: 100%;
 }
 .booking-list .item-info .info-box section {
-  width: 50%;
+  background-color: white;
+  border: 0.3px solid #afafaf;
+  padding: 50px;
+}
+.booking-list .item-info .info-box section .info-item {
+  display: flex;
+  height: 30px;
+  margin-top: 10px;
+  align-items: center;
+}
+.booking-list .item-info .info-box section .info-item span {
+  margin-left: 5px;
+}
+.booking-list .item-info .info-box section .info-title {
+  font-size: 25px;
 }
 .booking-list .list-parent {
   display: grid;
@@ -134,12 +171,11 @@ b {
   transition: 0.3s;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 16px 0px;
 }
-.booking-list .list-parent .lists .list-icon {
-  display: inline;
-}
 .booking-list .list-parent .lists .list-item {
   display: flex;
   align-items: center;
+  height: 25px;
+  line-height: 25px;
   margin-top: 15px;
 }
 .booking-list .list-parent .lists .list-item svg {
