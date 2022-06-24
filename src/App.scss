@@ -5,14 +5,28 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: 'GmarketSansLight';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansLight.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'GmarketSansBold';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 * {
     margin: 0;
     padding: 0;
-    font-family: GmarketSansMedium;
+    font-family: GmarketSansLight;
 }
 
 body {
-    background-color: #ededed;
+    background-color: #f7f7f7;
     -ms-overflow-style: none;
 }
 ::-webkit-scrollbar {
@@ -24,13 +38,16 @@ header {
     width: 100%;
     height: 60px;
     margin: auto;
-    border-bottom: 0.2px solid #000000;
+    border-bottom: 0.2px solid #b4b4b4;
     background-color: white;
     .header-box {
         display: flex;
         width: 70%;
         margin: auto;
         align-items: center;
+        img {
+            width: 30%;
+        }
         .header-btn {
             display: flex;
             justify-content: flex-end;
@@ -46,12 +63,19 @@ header {
     }
 }
 
+big {
+    font-family: GmarketSansBold;
+}
+
+b {
+    font-family: GmarketSansMedium;
+}
+
 .booking-list {
     // display: grid;
     padding: 1.5%;
     width: 70%;
     height: 100%;
-    background-color: white;
     margin: auto;
     justify-content: center;
     .type-box {
@@ -59,14 +83,14 @@ header {
         justify-content: flex-end;
         border: none;
         .booking-type {
+            background: rgb(0 0 0);
             -o-appearance: none;
             -webkit-appearance: none;
             -moz-appearance: none;
             appearance: none;
-            width: 130px;
+            width: 100px;
             height: 40px;
             cursor: pointer;
-            transition: .3s;
             background: url('https://cdn.iconscout.com/icon/free/png-256/keyboard-down-arrow-1780093-1518654.png') calc(100% - 5px) center no-repeat;
             background-size: 25%;
             outline: none;
@@ -76,6 +100,21 @@ header {
             padding: 1%;
         }
     }
+    .item-info {
+        display: block;
+        width: 100%;
+        .info-box {
+            display: flex;
+            justify-content: center;
+            img {
+                width: 50%;
+            }
+            section {
+                width: 50%;
+            }
+        }
+        
+    }
     .list-parent {
         display: grid;
         place-content: center;
@@ -84,11 +123,18 @@ header {
         .lists {
             float: left;
             background: #FFFFFF;
-            box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.11);
+            box-shadow: rgb(0 0 0 / 4%) 0px 4px 16px 0px;
             border-radius: 15px;
             height: 200px;
             padding: 20px;
             justify-content: center;
+            transition: 0.3s;
+            &:hover {
+                cursor: pointer;
+                transform:translateY(-10px);
+                transition: 0.3s;
+                box-shadow: rgb(0 0 0 / 10%) 0px 4px 16px 0px;
+            }
             .list-icon {
                 display:inline;
             }
@@ -103,6 +149,23 @@ header {
             .list-title {
                 font-size: 27px;
             }
+        }
+    }
+}
+
+
+@media all and (max-width: 985px){
+    .booking-list{
+        .list-parent {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+}
+
+@media all and (max-width: 650px){
+    .booking-list{
+        .list-parent {
+            grid-template-columns: 1fr;
         }
     }
 }

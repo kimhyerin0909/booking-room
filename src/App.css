@@ -4,14 +4,26 @@
   font-weight: normal;
   font-style: normal;
 }
+@font-face {
+  font-family: "GmarketSansLight";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansLight.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "GmarketSansBold";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
 * {
   margin: 0;
   padding: 0;
-  font-family: GmarketSansMedium;
+  font-family: GmarketSansLight;
 }
 
 body {
-  background-color: #ededed;
+  background-color: #f7f7f7;
   -ms-overflow-style: none;
 }
 
@@ -24,7 +36,7 @@ header {
   width: 100%;
   height: 60px;
   margin: auto;
-  border-bottom: 0.2px solid #000000;
+  border-bottom: 0.2px solid #b4b4b4;
   background-color: white;
 }
 header .header-box {
@@ -32,6 +44,9 @@ header .header-box {
   width: 70%;
   margin: auto;
   align-items: center;
+}
+header .header-box img {
+  width: 30%;
 }
 header .header-box .header-btn {
   display: flex;
@@ -46,11 +61,18 @@ header .header-box .header-btn .home:hover {
   color: rgb(120, 120, 120);
 }
 
+big {
+  font-family: GmarketSansBold;
+}
+
+b {
+  font-family: GmarketSansMedium;
+}
+
 .booking-list {
   padding: 1.5%;
   width: 70%;
   height: 100%;
-  background-color: white;
   margin: auto;
   justify-content: center;
 }
@@ -60,14 +82,14 @@ header .header-box .header-btn .home:hover {
   border: none;
 }
 .booking-list .type-box .booking-type {
+  background: rgb(0, 0, 0);
   -o-appearance: none;
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  width: 130px;
+  width: 100px;
   height: 40px;
   cursor: pointer;
-  transition: 0.3s;
   background: url("https://cdn.iconscout.com/icon/free/png-256/keyboard-down-arrow-1780093-1518654.png") calc(100% - 5px) center no-repeat;
   background-size: 25%;
   outline: none;
@@ -75,6 +97,20 @@ header .header-box .header-btn .home:hover {
   border-radius: 3px;
   margin-bottom: 30px;
   padding: 1%;
+}
+.booking-list .item-info {
+  display: block;
+  width: 100%;
+}
+.booking-list .item-info .info-box {
+  display: flex;
+  justify-content: center;
+}
+.booking-list .item-info .info-box img {
+  width: 50%;
+}
+.booking-list .item-info .info-box section {
+  width: 50%;
 }
 .booking-list .list-parent {
   display: grid;
@@ -85,11 +121,18 @@ header .header-box .header-btn .home:hover {
 .booking-list .list-parent .lists {
   float: left;
   background: #FFFFFF;
-  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.11);
+  box-shadow: rgba(0, 0, 0, 0.04) 0px 4px 16px 0px;
   border-radius: 15px;
   height: 200px;
   padding: 20px;
   justify-content: center;
+  transition: 0.3s;
+}
+.booking-list .list-parent .lists:hover {
+  cursor: pointer;
+  transform: translateY(-10px);
+  transition: 0.3s;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 16px 0px;
 }
 .booking-list .list-parent .lists .list-icon {
   display: inline;
@@ -104,6 +147,17 @@ header .header-box .header-btn .home:hover {
 }
 .booking-list .list-parent .lists .list-title {
   font-size: 27px;
+}
+
+@media all and (max-width: 985px) {
+  .booking-list .list-parent {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+@media all and (max-width: 650px) {
+  .booking-list .list-parent {
+    grid-template-columns: 1fr;
+  }
 }
 
 /*# sourceMappingURL=App.css.map */
