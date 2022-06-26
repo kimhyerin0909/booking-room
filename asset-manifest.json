@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/kimhyerin0909/booking-room/static/css/main.b62ec3d3.css",
+    "main.js": "/kimhyerin0909/booking-room/static/js/main.455d7740.js",
+    "static/js/787.ff579eff.chunk.js": "/kimhyerin0909/booking-room/static/js/787.ff579eff.chunk.js",
+    "index.html": "/kimhyerin0909/booking-room/index.html",
+    "main.b62ec3d3.css.map": "/kimhyerin0909/booking-room/static/css/main.b62ec3d3.css.map",
+    "main.455d7740.js.map": "/kimhyerin0909/booking-room/static/js/main.455d7740.js.map",
+    "787.ff579eff.chunk.js.map": "/kimhyerin0909/booking-room/static/js/787.ff579eff.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b62ec3d3.css",
+    "static/js/main.455d7740.js"
+  ]
+}
