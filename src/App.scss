@@ -108,15 +108,19 @@ b {
             width: 10%;
             display: flex;
             transition: 0.2s;
+            cursor: pointer;
             svg {
                 width: 25px;
+                cursor: pointer;
             }
             button {
+                cursor: pointer;
                 border: none;
                 background-color: #f7f7f7;
                 font-family: GmarketSansMedium;
             }
             &:hover {
+                cursor: pointer;
                 transition: 0.2s;
                 transform: translateX(-5px);
             }
@@ -147,6 +151,45 @@ b {
                 }
                 .info-title {
                     font-size: 25px;
+                }
+                .info-btn {
+                    border: none;
+                    background: linear-gradient(270deg, #3771E1 0%, #B2CCFF 100%);
+                    border-radius: 5px;
+                    width: 100%;
+                    color: white;
+                    font-family: GmarketSansBold;
+                    height: 50px;
+                    justify-content: center;
+                    &:hover {
+                        cursor: pointer;
+                        color: #b4b4b4;
+                    }
+                }
+                .info-team {
+                    width: 100%;
+                    margin-top: 5px;
+                    padding-left: 5%;
+                    span {
+                        height: 20px;
+                        color: black;
+                        margin-right: 5px;
+                        font-size: 15px;
+                        font-family: GmarketSansMedium;
+                    }
+                    .team0 {
+                        display: flex;
+                        width: 100%;
+                        height: 100%;
+                        flex-wrap: wrap;
+                    }
+                    .team1 {
+                        display: flex;
+                        width: 100%;
+                        height: 100%;
+                        flex-wrap: wrap;
+                        margin-top: 5px;
+                    }
                 }
             }
         }
@@ -189,10 +232,15 @@ b {
 }
 
 
-@media all and (max-width: 985px){
+@media all and (max-width: 990px){
     .booking-list{
         .list-parent {
             grid-template-columns: 1fr 1fr;
+        }
+        .item-info {
+            .info-box {
+                grid-template-columns: 1fr;
+            }
         }
     }
 }
@@ -201,6 +249,16 @@ b {
     .booking-list{
         .list-parent {
             grid-template-columns: 1fr;
+        }
+        .item-info {
+            .info-box {
+                grid-template-columns: 1fr;
+                section {
+                    .info-team {
+                        display: none;
+                    }
+                }
+            }
         }
     }
 }
