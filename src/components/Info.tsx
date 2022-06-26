@@ -1,6 +1,7 @@
 import React from 'react'
 
 export default function Info({...props}) {
+  
   return (
     <article className='item-info'>
       <div className='back' onClick={props.back}>
@@ -27,6 +28,20 @@ export default function Info({...props}) {
             <svg width="20" height="20" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg"><path fillRule="evenodd" clipRule="evenodd" d="M7.875 2.25C6.38316 2.25 4.95242 2.84263 3.89752 3.89752C2.84263 4.95242 2.25 6.38316 2.25 7.875V19.125C2.25 20.6168 2.84263 22.0476 3.89752 23.1025C4.95242 24.1574 6.38316 24.75 7.875 24.75H19.125C20.6168 24.75 22.0476 24.1574 23.1025 23.1025C24.1574 22.0476 24.75 20.6168 24.75 19.125V7.875C24.75 6.38316 24.1574 4.95242 23.1025 3.89752C22.0476 2.84263 20.6168 2.25 19.125 2.25H7.875ZM17.6962 12.0195C17.7973 11.9117 17.8761 11.785 17.9282 11.6466C17.9803 11.5083 18.0046 11.3611 17.9998 11.2134C17.995 11.0657 17.9612 10.9204 17.9002 10.7857C17.8392 10.6511 17.7523 10.5298 17.6445 10.4288C17.5367 10.3277 17.41 10.2489 17.2716 10.1968C17.1333 10.1447 16.9861 10.1204 16.8384 10.1252C16.6907 10.13 16.5454 10.1638 16.4107 10.2248C16.2761 10.2858 16.1548 10.3727 16.0538 10.4805L12.5854 14.1818L10.872 12.6596C10.6475 12.473 10.3593 12.381 10.0682 12.4029C9.77709 12.4249 9.50593 12.5591 9.31199 12.7773C9.11805 12.9955 9.01651 13.2805 9.02883 13.5722C9.04114 13.8639 9.16635 14.1393 9.378 14.3404L11.9093 16.5904C12.1283 16.7849 12.4145 16.8864 12.7072 16.8731C12.9999 16.8599 13.2758 16.733 13.4764 16.5195L17.6951 12.0195H17.6962Z" fill="black"/></svg>
             <span>예약 중 <b>{props.data.booking.length}</b>팀</span>
           </div>
+          <div className='info-team'>
+            {props.data.booking.map((data:any, index:number) => {
+              const std = props.data.booking[index].student;
+              let arr = [];
+              for(let i = 0; i < std.length; i++) {
+                arr.push([std[i].number, std[i].name]);
+              }
+              const a = <div key={index} className={`booking-student team${index}`}>
+                <span>{arr[0]}</span> <span>{arr[1]}</span> <span>{arr[2]}</span> <span>{arr[3]}</span>
+              </div>
+              return a;
+            })}
+          </div>
+          <button className='info-item info-btn'>예약하기</button>
         </section>
       </div>
     </article>
